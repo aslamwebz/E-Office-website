@@ -1,0 +1,276 @@
+body,
+html {
+  transition: all 0.5s;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #6c6f73;
+  transition: transform 0.6s ease-in-out;
+}
+
+.section-content {
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+.sm-mar{
+  margin: 40px 0 !important;
+}
+
+/*login form */
+
+#login-form{
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+#login-form form{
+  margin: 0 50px;
+  padding: 80px 100px;
+  text-align: center;
+  background: #43536C;
+  box-shadow: 5px 5px 5px #aaaaaa;
+}
+
+#login-form form input{
+  padding: 15px;
+  font-size: 1.1em;
+}
+
+#login-form #error h3{
+  background: #43536C;
+  padding: 15px;
+  color: white;
+  margin: 10px 50px;
+
+}
+
+/*admin form */
+textarea{
+  line-height: 3;
+  background: white;
+  font-size: 20px;
+  padding: 50px;
+  margin: 10px 50px;
+}
+
+.table{
+  transition: all 0.5s;
+}
+
+#sidebar{
+  background-color: #212529;
+  display: flex;
+  max-width: 240px;
+  z-index:1;
+  position: absolute;
+  width:0px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  opacity: 0.9;
+  transition: all 0.5s;
+  margin-bottom: 0;
+  min-height: 1600px;
+}
+
+#main-content{
+  width: 100%;
+  position: absolute;
+  padding:30px 70px;
+  transition: all 0.5s;
+  margin: 0 20px;
+}
+
+#admin-panel.menuDisplayed #sidebar{
+  width: 250px;
+  transition: all 0.5s;
+}
+
+#admin-panel.menuDisplayed #main-content{
+  padding-left: 250px;
+  transition: all 0.5s;
+}
+
+#button{
+  position: absolute;
+  min-height: auto;
+  top: 50%;
+  z-index: 2;
+  left: 220px;
+  transition: all 0.5s;
+}
+
+#button a{
+  border-radius: 100px;
+}
+
+.button-hidden{
+  left: 0px !important;
+  transition: all 0.5s;
+}
+
+ul.navbar-nav{
+  min-width: 250px;
+}
+
+#admin-panel .navbar-nav a.nav-link{
+  margin: 1px 0px;
+  padding: 10px 10px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  background: rgba(54, 50, 70, 0.5);
+}
+
+#admin-panel li.nav-item.active>a.nav-link{
+  color: #efefef;
+  background: #20a8d8;
+}
+
+#admin-panel .navbar-nav a.nav-link:hover{
+  margin: 1px 0px;
+  padding: 10px 25px;
+  color: #efefef;
+  background: #20a8d8;
+}
+
+#admin-panel .sidebar .fa{
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
+#admin-panel .sidebar .fas{
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
+#admin-main .card{
+  height:220px;
+  display: flex;
+  padding-top: 50px;
+}
+
+.card-body-icon {
+  position: absolute;
+  z-index: 0;
+  top: -1.25rem;
+  right: -1rem;
+  opacity: 0.4;
+  font-size: 5rem;
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+
+.profile-img{
+  height: 400px;
+  width: auto;
+  padding: 20px;
+  padding-left: 0px;
+  border:0.5px solid #fff;
+}
+
+
+footer.sticky-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #e9ecef;
+}
+
+footer.sticky-footer .copyright {
+  line-height: 1;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  footer.sticky-footer {
+    width: 100%;
+  }
+}
+
+body.sidebar-toggled footer.sticky-footer {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  body.sidebar-toggled footer.sticky-footer {
+    width: calc(100% - 90px);
+  }
+}
+
+#welcome{
+  background:rgba(54, 50, 60, 0.9);
+  padding-left: 10px !important;
+}
+
+#modal-dialog{
+  max-width: 1350px !important;
+  padding: 20px 0px;
+}
+
+/*Charts */
+
+#charts .card{
+  height: 100%;
+}
+
+/* User View  */
+  #user .card{
+  background: #f7fafc;
+  color:black;
+  box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  #user label{
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  #user input{
+        border: 1px solid #cad1d7;
+    border-radius: 0.4285rem;
+    background-color: transparent;
+    color: #8898aa;
+  }
+
+  #user .card-description{
+  color: #8898aa;
+  }
+
+  #user textarea{
+    background-color: transparent;
+    color: #8898aa;
+    border: 1px solid #cad1d7;
+  }
+
+  #user img{
+    border-radius: 5px;
+  }
+
+  /* Note */
+
+   #note .card{
+    border:none;
+  }
+
+  #note .card-body{
+    height: 200px;
+    padding: 40px 0 0 0;
+    border:1px solid #f2f2f2;
+    border-bottom: none;
+  }
+
+  #note .card-footer{
+    background: white;
+    border:1px solid #f2f2f2;
+    border-top: none;
+  }
